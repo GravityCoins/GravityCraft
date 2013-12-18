@@ -68,6 +68,7 @@ import javafx.util.Duration;
 public class ColorfulCircles extends Application {
     private static final double WIDTH = 495, HEIGHT = 480;
     private Timeline animation;
+    private int test = 9;
 
     private void init(Stage primaryStage) {
         Group root = new Group();
