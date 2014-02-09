@@ -99,6 +99,16 @@ public class ColorfulCircles extends Application {
             circle.setStroke(Color.web("white",0.16f));
             circle.setStrokeWidth(4f);
             layer3.getChildren().add(circle);
+            
+        }
+        // jcandrade21 change - create fourth list of circles
+        Group layer4 = new Group();
+        for(int i=0; i<30;i++) {
+            Circle circle = new Circle(180,Color.web("white",0.05f));
+            circle.setStrokeType(StrokeType.OUTSIDE);
+            circle.setStroke(Color.web("white",0.16f));
+            circle.setStrokeWidth(4f);
+            layer4.getChildren().add(circle);
         }
         // Set a blur effect on each layer
         layer1.setEffect(new BoxBlur(30,30,3));
